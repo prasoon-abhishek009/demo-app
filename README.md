@@ -1,4 +1,5 @@
 **ABOUT**
+
 Multimodular Android app with bottom navigation bar display 4 screens namely home,accounts,cards and payments
 Architecture used - MVVM with clean architecure
 Notable libraries used - 
