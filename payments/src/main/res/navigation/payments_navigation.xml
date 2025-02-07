@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payments_navigation"
+    app:startDestination="@id/navigation_payments_home">
+
+    <fragment
+        android:id="@+id/navigation_payments_home"
+        android:name="com.prasoon.payments.PaymentsFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_payments">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_transfer_money"
+        android:name="com.prasoon.payments.TransferMoneyFragment"
+        android:label="TransferMoney"
+        tools:layout="@layout/fragment_transfer_money" >
+        <deepLink
+            app:uri="android-app://prasoon.demo.app/navigation_transfer_money" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_pay_bills"
+        android:name="com.prasoon.payments.PayBillsFragment"
+        android:label="PayBills"
+        tools:layout="@layout/fragment_pay_bills" >
+        <deepLink
+            app:uri="android-app://prasoon.demo.app/navigation_pay_bills" />
+
+    </fragment>
+
+</navigation>
